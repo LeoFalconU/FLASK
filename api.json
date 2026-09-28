@@ -1,0 +1,2786 @@
+{
+
+"3D:RF:09:7F": {
+    "Name": "R1",
+    "Protocolos": ["OSPF","STP" ,"VRRP"],
+    "Status": "Online",
+    "VLANs": {
+        "VLAN1": {
+            "Puertos": [8080,587],
+            "Policies": ["Allow_all" , "Always_Online"],
+            "ET": true,
+            "IP": "192.168.10.68",
+            "SSH": true
+            }
+        }
+    
+    },
+    "5A:AF:11:7G": {
+    "Name": "T5",
+    "Protocolos": ["OSPF","STP" ,"VRRP"],
+    "Status": "Offline",
+    "VLANs": {
+        "VLAN1": {
+            "Puertos": [8080,587],
+            "Policies": ["Allow_all" , "Always_Online"],
+            "ET": true,
+            "IP": "192.168.10.65",
+            "SSH": true
+            }
+        }
+    
+    },
+  "39:0C:8C:7D": {
+    "Name": "SW1",
+    "Protocolos": [
+      "BGP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          22
+        ],
+        "Policies": [
+          "Log_Traffic"
+        ],
+        "ET": true,
+        "IP": "192.168.130.156",
+        "SSH": true
+      }
+    }
+  },
+  "65:D6:70:E5": {
+    "Name": "AP2",
+    "Protocolos": [
+      "OSPF",
+      "STP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          8080
+        ],
+        "Policies": [
+          "Always_Online",
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.25.93",
+        "SSH": false
+      }
+    }
+  },
+  "87:16:EB:3F": {
+    "Name": "RT3",
+    "Protocolos": [
+      "SNMP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          80
+        ],
+        "Policies": [
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.21.220",
+        "SSH": true
+      },
+      "VLAN50": {
+        "Puertos": [
+          23
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Isolate_VLAN"
+        ],
+        "ET": true,
+        "IP": "192.168.95.92",
+        "SSH": true
+      }
+    }
+  },
+  "88:24:57:7D": {
+    "Name": "SW4",
+    "Protocolos": [
+      "HSRP",
+      "VRRP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          8080
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.69.18",
+        "SSH": true
+      }
+    }
+  },
+  "A1:6C:FF:CA": {
+    "Name": "RT5",
+    "Protocolos": [
+      "VRRP",
+      "STP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          3389,
+          23,
+          8443
+        ],
+        "Policies": [
+          "Log_Traffic",
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.24.195",
+        "SSH": true
+      }
+    }
+  },
+  "38:4E:51:D8": {
+    "Name": "AP6",
+    "Protocolos": [
+      "HSRP",
+      "CDP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          161,
+          22
+        ],
+        "Policies": [
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.197.166",
+        "SSH": false
+      },
+      "VLAN50": {
+        "Puertos": [
+          587
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Allow_HTTP"
+        ],
+        "ET": true,
+        "IP": "192.168.245.186",
+        "SSH": false
+      }
+    }
+  },
+  "5B:36:98:65": {
+    "Name": "SW7",
+    "Protocolos": [
+      "STP",
+      "SNMP",
+      "LLDP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          22,
+          80
+        ],
+        "Policies": [
+          "QoS_High",
+          "Log_Traffic"
+        ],
+        "ET": true,
+        "IP": "192.168.62.226",
+        "SSH": true
+      }
+    }
+  },
+  "2B:F8:23:40": {
+    "Name": "SW8",
+    "Protocolos": [
+      "ISIS",
+      "SNMP",
+      "STP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          8080,
+          587,
+          23
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.31.65",
+        "SSH": true
+      },
+      "VLAN10": {
+        "Puertos": [
+          21
+        ],
+        "Policies": [
+          "Strict_FW"
+        ],
+        "ET": true,
+        "IP": "192.168.151.58",
+        "SSH": true
+      }
+    }
+  },
+  "24:1E:75:22": {
+    "Name": "R9",
+    "Protocolos": [
+      "BGP",
+      "SNMP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          161
+        ],
+        "Policies": [
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.63.202",
+        "SSH": false
+      }
+    }
+  },
+  "D0:61:30:31": {
+    "Name": "RT10",
+    "Protocolos": [
+      "HSRP",
+      "CDP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          8443,
+          80,
+          22
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "Always_Online"
+        ],
+        "ET": true,
+        "IP": "192.168.50.50",
+        "SSH": false
+      },
+      "VLAN100": {
+        "Puertos": [
+          23
+        ],
+        "Policies": [
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.64.225",
+        "SSH": true
+      }
+    }
+  },
+  "E2:32:19:07": {
+    "Name": "R11",
+    "Protocolos": [
+      "STP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          23
+        ],
+        "Policies": [
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.1.254",
+        "SSH": false
+      }
+    }
+  },
+  "87:E8:92:D8": {
+    "Name": "AP12",
+    "Protocolos": [
+      "ISIS",
+      "STP",
+      "RIP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          161,
+          22,
+          21
+        ],
+        "Policies": [
+          "Allow_all"
+        ],
+        "ET": false,
+        "IP": "192.168.129.237",
+        "SSH": true
+      }
+    }
+  },
+  "1D:29:5F:23": {
+    "Name": "AP13",
+    "Protocolos": [
+      "CDP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          8080,
+          3389,
+          22
+        ],
+        "Policies": [
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.240.68",
+        "SSH": true
+      }
+    }
+  },
+  "A0:7A:87:CA": {
+    "Name": "SW14",
+    "Protocolos": [
+      "CDP",
+      "VRRP",
+      "ISIS",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          3389,
+          8443
+        ],
+        "Policies": [
+          "Always_Online"
+        ],
+        "ET": true,
+        "IP": "192.168.130.69",
+        "SSH": true
+      }
+    }
+  },
+  "B2:23:7D:BD": {
+    "Name": "FW15",
+    "Protocolos": [
+      "ISIS",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          161,
+          22,
+          8443
+        ],
+        "Policies": [
+          "Always_Online",
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.30.229",
+        "SSH": true
+      },
+      "VLAN500": {
+        "Puertos": [
+          161,
+          443,
+          587
+        ],
+        "Policies": [
+          "Strict_FW",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.53.177",
+        "SSH": false
+      }
+    }
+  },
+  "FA:80:1A:2F": {
+    "Name": "RT16",
+    "Protocolos": [
+      "OSPF",
+      "CDP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "Allow_all"
+        ],
+        "ET": true,
+        "IP": "192.168.20.243",
+        "SSH": true
+      }
+    }
+  },
+  "12:BD:4B:DC": {
+    "Name": "SW17",
+    "Protocolos": [
+      "VRRP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          8443
+        ],
+        "Policies": [
+          "Always_Online"
+        ],
+        "ET": false,
+        "IP": "192.168.200.145",
+        "SSH": false
+      }
+    }
+  },
+  "4F:79:53:5A": {
+    "Name": "RT18",
+    "Protocolos": [
+      "STP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          443,
+          80
+        ],
+        "Policies": [
+          "Allow_all",
+          "Allow_HTTP"
+        ],
+        "ET": true,
+        "IP": "192.168.52.211",
+        "SSH": false
+      }
+    }
+  },
+  "B3:9C:74:72": {
+    "Name": "R19",
+    "Protocolos": [
+      "RIP",
+      "HSRP",
+      "LACP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          8443,
+          161
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "Isolate_VLAN"
+        ],
+        "ET": true,
+        "IP": "192.168.30.226",
+        "SSH": false
+      }
+    }
+  },
+  "5B:87:13:37": {
+    "Name": "AP20",
+    "Protocolos": [
+      "LACP",
+      "CDP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          8080,
+          587,
+          22
+        ],
+        "Policies": [
+          "Allow_all",
+          "Rate_Limit"
+        ],
+        "ET": true,
+        "IP": "192.168.94.112",
+        "SSH": true
+      },
+      "VLAN30": {
+        "Puertos": [
+          21,
+          3389,
+          8443
+        ],
+        "Policies": [
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.171.106",
+        "SSH": false
+      }
+    }
+  },
+  "CE:97:41:62": {
+    "Name": "RT21",
+    "Protocolos": [
+      "HSRP",
+      "STP",
+      "VRRP",
+      "CDP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          8080,
+          23
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.173.56",
+        "SSH": false
+      },
+      "VLAN20": {
+        "Puertos": [
+          443,
+          80,
+          587
+        ],
+        "Policies": [
+          "Always_Online",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.58.208",
+        "SSH": true
+      }
+    }
+  },
+  "4B:0C:17:7D": {
+    "Name": "RT22",
+    "Protocolos": [
+      "BGP",
+      "ISIS",
+      "HSRP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          8080,
+          443
+        ],
+        "Policies": [
+          "Always_Online"
+        ],
+        "ET": false,
+        "IP": "192.168.57.47",
+        "SSH": false
+      },
+      "VLAN30": {
+        "Puertos": [
+          161
+        ],
+        "Policies": [
+          "Always_Online"
+        ],
+        "ET": false,
+        "IP": "192.168.35.207",
+        "SSH": false
+      }
+    }
+  },
+  "A2:E2:DA:E4": {
+    "Name": "SW23",
+    "Protocolos": [
+      "ISIS",
+      "CDP",
+      "VRRP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          53,
+          8080,
+          587
+        ],
+        "Policies": [
+          "Always_Online",
+          "QoS_High"
+        ],
+        "ET": true,
+        "IP": "192.168.70.87",
+        "SSH": false
+      },
+      "VLAN200": {
+        "Puertos": [
+          80,
+          443,
+          3389
+        ],
+        "Policies": [
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.181.56",
+        "SSH": true
+      }
+    }
+  },
+  "D4:D0:A9:EE": {
+    "Name": "RT24",
+    "Protocolos": [
+      "RIP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          23,
+          53,
+          22
+        ],
+        "Policies": [
+          "QoS_High",
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.138.193",
+        "SSH": true
+      }
+    }
+  },
+  "F9:70:8B:DF": {
+    "Name": "RT25",
+    "Protocolos": [
+      "HSRP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "Strict_FW"
+        ],
+        "ET": true,
+        "IP": "192.168.233.102",
+        "SSH": true
+      },
+      "VLAN100": {
+        "Puertos": [
+          8443
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Allow_HTTP"
+        ],
+        "ET": true,
+        "IP": "192.168.13.68",
+        "SSH": false
+      }
+    }
+  },
+  "A7:6C:E8:A7": {
+    "Name": "FW26",
+    "Protocolos": [
+      "VRRP",
+      "HSRP",
+      "CDP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          161
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": true,
+        "IP": "192.168.167.19",
+        "SSH": true
+      }
+    }
+  },
+  "0F:7E:66:0A": {
+    "Name": "AP27",
+    "Protocolos": [
+      "RIP",
+      "STP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          8080,
+          53,
+          587
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Always_Online"
+        ],
+        "ET": true,
+        "IP": "192.168.247.81",
+        "SSH": true
+      }
+    }
+  },
+  "0D:9F:C0:CB": {
+    "Name": "SW28",
+    "Protocolos": [
+      "LLDP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          3389,
+          80,
+          22
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.18.131",
+        "SSH": false
+      }
+    }
+  },
+  "06:D7:FA:36": {
+    "Name": "RT29",
+    "Protocolos": [
+      "CDP",
+      "ISIS",
+      "STP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          161,
+          587,
+          8443
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.83.220",
+        "SSH": true
+      }
+    }
+  },
+  "2C:8E:E6:7C": {
+    "Name": "RT30",
+    "Protocolos": [
+      "LLDP",
+      "HSRP",
+      "LACP",
+      "OSPF"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.88.73",
+        "SSH": false
+      }
+    }
+  },
+  "05:61:2B:7B": {
+    "Name": "RT31",
+    "Protocolos": [
+      "SNMP",
+      "RIP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          80
+        ],
+        "Policies": [
+          "Log_Traffic",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.79.171",
+        "SSH": false
+      },
+      "VLAN30": {
+        "Puertos": [
+          161,
+          8443
+        ],
+        "Policies": [
+          "DMZ_Restrict",
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.91.181",
+        "SSH": false
+      }
+    }
+  },
+  "8A:9C:80:76": {
+    "Name": "R32",
+    "Protocolos": [
+      "RIP",
+      "LACP",
+      "BGP",
+      "STP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          53,
+          587,
+          161
+        ],
+        "Policies": [
+          "Always_Online",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.59.94",
+        "SSH": true
+      }
+    }
+  },
+  "9A:07:40:8C": {
+    "Name": "R33",
+    "Protocolos": [
+      "SNMP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          80,
+          22
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.88.49",
+        "SSH": true
+      },
+      "VLAN100": {
+        "Puertos": [
+          53,
+          80
+        ],
+        "Policies": [
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.19.149",
+        "SSH": true
+      }
+    }
+  },
+  "4D:4C:9B:2B": {
+    "Name": "SW34",
+    "Protocolos": [
+      "SNMP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          23,
+          53,
+          3389
+        ],
+        "Policies": [
+          "Strict_FW",
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.146.160",
+        "SSH": true
+      },
+      "VLAN200": {
+        "Puertos": [
+          80,
+          8080,
+          3389
+        ],
+        "Policies": [
+          "Always_Online",
+          "Deny_Inbound"
+        ],
+        "ET": true,
+        "IP": "192.168.45.143",
+        "SSH": true
+      }
+    }
+  },
+  "50:01:D1:E6": {
+    "Name": "AP35",
+    "Protocolos": [
+      "VRRP",
+      "OSPF",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          53,
+          80,
+          8080
+        ],
+        "Policies": [
+          "Strict_FW",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.30.141",
+        "SSH": true
+      }
+    }
+  },
+  "4C:88:48:24": {
+    "Name": "R36",
+    "Protocolos": [
+      "VRRP",
+      "LLDP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "DMZ_Restrict",
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.113.22",
+        "SSH": true
+      },
+      "VLAN30": {
+        "Puertos": [
+          21,
+          3389
+        ],
+        "Policies": [
+          "Allow_all",
+          "Always_Online"
+        ],
+        "ET": true,
+        "IP": "192.168.247.174",
+        "SSH": true
+      }
+    }
+  },
+  "89:14:59:F0": {
+    "Name": "AP37",
+    "Protocolos": [
+      "ISIS",
+      "VRRP",
+      "STP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          21,
+          23
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "Always_Online"
+        ],
+        "ET": true,
+        "IP": "192.168.85.107",
+        "SSH": false
+      },
+      "VLAN1": {
+        "Puertos": [
+          8443,
+          23
+        ],
+        "Policies": [
+          "Allow_HTTP"
+        ],
+        "ET": true,
+        "IP": "192.168.81.66",
+        "SSH": false
+      }
+    }
+  },
+  "3B:CE:00:EC": {
+    "Name": "RT38",
+    "Protocolos": [
+      "RIP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          53,
+          22,
+          8080
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.113.227",
+        "SSH": false
+      }
+    }
+  },
+  "3E:0E:7A:51": {
+    "Name": "FW39",
+    "Protocolos": [
+      "OSPF",
+      "SNMP",
+      "HSRP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          80,
+          443
+        ],
+        "Policies": [
+          "QoS_High",
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.107.215",
+        "SSH": false
+      }
+    }
+  },
+  "F1:7C:E9:4A": {
+    "Name": "RT40",
+    "Protocolos": [
+      "LLDP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          587
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.211.2",
+        "SSH": false
+      },
+      "VLAN200": {
+        "Puertos": [
+          587,
+          3389,
+          53
+        ],
+        "Policies": [
+          "Allow_HTTP"
+        ],
+        "ET": false,
+        "IP": "192.168.89.87",
+        "SSH": false
+      }
+    }
+  },
+  "E9:A4:60:7A": {
+    "Name": "AP41",
+    "Protocolos": [
+      "RIP",
+      "HSRP",
+      "OSPF"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          23,
+          8443,
+          443
+        ],
+        "Policies": [
+          "Allow_all",
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.223.27",
+        "SSH": false
+      }
+    }
+  },
+  "33:E9:07:49": {
+    "Name": "RT42",
+    "Protocolos": [
+      "STP",
+      "BGP",
+      "ISIS",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          80,
+          21,
+          161
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "Allow_HTTP"
+        ],
+        "ET": true,
+        "IP": "192.168.159.19",
+        "SSH": true
+      }
+    }
+  },
+  "93:74:2E:DE": {
+    "Name": "R43",
+    "Protocolos": [
+      "BGP",
+      "ISIS",
+      "STP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          22,
+          587
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.63.137",
+        "SSH": false
+      }
+    }
+  },
+  "5C:57:59:28": {
+    "Name": "AP44",
+    "Protocolos": [
+      "LLDP",
+      "RIP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          8443,
+          587
+        ],
+        "Policies": [
+          "QoS_High",
+          "Allow_all"
+        ],
+        "ET": false,
+        "IP": "192.168.231.75",
+        "SSH": true
+      },
+      "VLAN10": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "Strict_FW",
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.177.66",
+        "SSH": false
+      }
+    }
+  },
+  "9A:65:C4:F7": {
+    "Name": "R45",
+    "Protocolos": [
+      "HSRP",
+      "LLDP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          587,
+          22,
+          23
+        ],
+        "Policies": [
+          "Allow_all",
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.214.233",
+        "SSH": false
+      }
+    }
+  },
+  "75:B4:70:61": {
+    "Name": "AP46",
+    "Protocolos": [
+      "CDP",
+      "STP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          22,
+          3389
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Always_Online"
+        ],
+        "ET": false,
+        "IP": "192.168.84.193",
+        "SSH": false
+      },
+      "VLAN20": {
+        "Puertos": [
+          8080
+        ],
+        "Policies": [
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.136.130",
+        "SSH": false
+      }
+    }
+  },
+  "54:83:F6:97": {
+    "Name": "FW47",
+    "Protocolos": [
+      "ISIS",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          8443,
+          23,
+          161
+        ],
+        "Policies": [
+          "Always_Online",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.68.139",
+        "SSH": true
+      }
+    }
+  },
+  "E8:BC:86:C3": {
+    "Name": "FW48",
+    "Protocolos": [
+      "CDP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          161,
+          21,
+          8080
+        ],
+        "Policies": [
+          "Allow_HTTP"
+        ],
+        "ET": false,
+        "IP": "192.168.167.106",
+        "SSH": true
+      }
+    }
+  },
+  "47:17:13:9B": {
+    "Name": "RT49",
+    "Protocolos": [
+      "BGP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          21,
+          161
+        ],
+        "Policies": [
+          "Strict_FW",
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.168.27",
+        "SSH": false
+      },
+      "VLAN30": {
+        "Puertos": [
+          23,
+          587,
+          22
+        ],
+        "Policies": [
+          "Log_Traffic",
+          "Allow_HTTP"
+        ],
+        "ET": false,
+        "IP": "192.168.244.62",
+        "SSH": false
+      }
+    }
+  },
+  "32:BC:B7:1F": {
+    "Name": "RT50",
+    "Protocolos": [
+      "RIP",
+      "BGP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          8443,
+          3389,
+          22
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": true,
+        "IP": "192.168.33.203",
+        "SSH": true
+      }
+    }
+  },
+  "23:6A:6E:77": {
+    "Name": "FW51",
+    "Protocolos": [
+      "LLDP",
+      "OSPF"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          161
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Always_Online"
+        ],
+        "ET": true,
+        "IP": "192.168.34.5",
+        "SSH": false
+      }
+    }
+  },
+  "79:A5:08:59": {
+    "Name": "FW52",
+    "Protocolos": [
+      "STP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "Rate_Limit"
+        ],
+        "ET": true,
+        "IP": "192.168.116.130",
+        "SSH": true
+      },
+      "VLAN100": {
+        "Puertos": [
+          22,
+          161,
+          587
+        ],
+        "Policies": [
+          "Allow_all",
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.217.104",
+        "SSH": false
+      }
+    }
+  },
+  "37:FB:E3:25": {
+    "Name": "R53",
+    "Protocolos": [
+      "LLDP",
+      "STP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          8443,
+          3389,
+          161
+        ],
+        "Policies": [
+          "DMZ_Restrict",
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.117.131",
+        "SSH": false
+      }
+    }
+  },
+  "32:3A:6E:DC": {
+    "Name": "RT54",
+    "Protocolos": [
+      "HSRP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          80,
+          21
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.245.41",
+        "SSH": false
+      }
+    }
+  },
+  "22:2E:2B:2F": {
+    "Name": "RT55",
+    "Protocolos": [
+      "LACP",
+      "STP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          161,
+          21,
+          80
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.248.75",
+        "SSH": false
+      },
+      "VLAN50": {
+        "Puertos": [
+          80,
+          3389
+        ],
+        "Policies": [
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.58.218",
+        "SSH": true
+      }
+    }
+  },
+  "B3:BC:3A:8E": {
+    "Name": "AP56",
+    "Protocolos": [
+      "HSRP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          587,
+          22,
+          443
+        ],
+        "Policies": [
+          "QoS_High",
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.2.48",
+        "SSH": true
+      },
+      "VLAN50": {
+        "Puertos": [
+          8443,
+          23,
+          80
+        ],
+        "Policies": [
+          "Allow_all"
+        ],
+        "ET": true,
+        "IP": "192.168.192.137",
+        "SSH": true
+      }
+    }
+  },
+  "C0:D6:E8:AE": {
+    "Name": "SW57",
+    "Protocolos": [
+      "VRRP",
+      "LACP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          3389
+        ],
+        "Policies": [
+          "Always_Online"
+        ],
+        "ET": false,
+        "IP": "192.168.114.171",
+        "SSH": false
+      }
+    }
+  },
+  "F8:E2:D4:8B": {
+    "Name": "SW58",
+    "Protocolos": [
+      "BGP",
+      "LACP",
+      "HSRP",
+      "CDP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          8443,
+          587,
+          22
+        ],
+        "Policies": [
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.2.54",
+        "SSH": false
+      }
+    }
+  },
+  "6C:46:82:94": {
+    "Name": "FW59",
+    "Protocolos": [
+      "OSPF",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          23
+        ],
+        "Policies": [
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.19.103",
+        "SSH": true
+      },
+      "VLAN10": {
+        "Puertos": [
+          22,
+          53
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.147.105",
+        "SSH": false
+      }
+    }
+  },
+  "94:3A:CF:0A": {
+    "Name": "FW60",
+    "Protocolos": [
+      "LLDP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          80,
+          8080
+        ],
+        "Policies": [
+          "Strict_FW",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.102.224",
+        "SSH": false
+      },
+      "VLAN1": {
+        "Puertos": [
+          21,
+          8080,
+          8443
+        ],
+        "Policies": [
+          "Always_Online"
+        ],
+        "ET": true,
+        "IP": "192.168.136.132",
+        "SSH": true
+      }
+    }
+  },
+  "B2:B3:4B:78": {
+    "Name": "R61",
+    "Protocolos": [
+      "VRRP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          80,
+          443,
+          53
+        ],
+        "Policies": [
+          "Strict_FW",
+          "Allow_HTTP"
+        ],
+        "ET": false,
+        "IP": "192.168.222.250",
+        "SSH": false
+      }
+    }
+  },
+  "4D:E1:22:F0": {
+    "Name": "RT62",
+    "Protocolos": [
+      "VRRP",
+      "CDP",
+      "OSPF",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          53,
+          22
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.20.167",
+        "SSH": true
+      },
+      "VLAN20": {
+        "Puertos": [
+          3389,
+          161,
+          23
+        ],
+        "Policies": [
+          "Strict_FW",
+          "Rate_Limit"
+        ],
+        "ET": true,
+        "IP": "192.168.116.234",
+        "SSH": true
+      }
+    }
+  },
+  "A4:F3:4D:1F": {
+    "Name": "RT63",
+    "Protocolos": [
+      "LACP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "Strict_FW"
+        ],
+        "ET": true,
+        "IP": "192.168.94.97",
+        "SSH": false
+      },
+      "VLAN1": {
+        "Puertos": [
+          23,
+          21
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": true,
+        "IP": "192.168.85.26",
+        "SSH": false
+      }
+    }
+  },
+  "91:81:4C:AA": {
+    "Name": "R64",
+    "Protocolos": [
+      "CDP",
+      "STP",
+      "LACP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          80,
+          587,
+          161
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "Deny_Inbound"
+        ],
+        "ET": true,
+        "IP": "192.168.166.173",
+        "SSH": false
+      },
+      "VLAN10": {
+        "Puertos": [
+          21,
+          22,
+          8443
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.243.198",
+        "SSH": false
+      }
+    }
+  },
+  "62:73:46:4F": {
+    "Name": "R65",
+    "Protocolos": [
+      "BGP",
+      "SNMP",
+      "LLDP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          3389,
+          443
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Strict_FW"
+        ],
+        "ET": true,
+        "IP": "192.168.213.179",
+        "SSH": true
+      },
+      "VLAN100": {
+        "Puertos": [
+          53,
+          22,
+          23
+        ],
+        "Policies": [
+          "Log_Traffic",
+          "Allow_HTTP"
+        ],
+        "ET": false,
+        "IP": "192.168.193.193",
+        "SSH": false
+      }
+    }
+  },
+  "77:7A:9E:F0": {
+    "Name": "SW66",
+    "Protocolos": [
+      "CDP",
+      "LLDP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          161,
+          8443
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Log_Traffic"
+        ],
+        "ET": true,
+        "IP": "192.168.224.66",
+        "SSH": true
+      }
+    }
+  },
+  "F6:BE:34:3F": {
+    "Name": "FW67",
+    "Protocolos": [
+      "STP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          80,
+          8080
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "Allow_all"
+        ],
+        "ET": false,
+        "IP": "192.168.14.103",
+        "SSH": false
+      }
+    }
+  },
+  "78:C5:29:BF": {
+    "Name": "SW68",
+    "Protocolos": [
+      "LACP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          443
+        ],
+        "Policies": [
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.179.214",
+        "SSH": true
+      },
+      "VLAN200": {
+        "Puertos": [
+          53,
+          8443,
+          22
+        ],
+        "Policies": [
+          "Allow_all"
+        ],
+        "ET": false,
+        "IP": "192.168.56.215",
+        "SSH": true
+      }
+    }
+  },
+  "D8:38:93:79": {
+    "Name": "FW69",
+    "Protocolos": [
+      "OSPF",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          80
+        ],
+        "Policies": [
+          "Strict_FW",
+          "Rate_Limit"
+        ],
+        "ET": true,
+        "IP": "192.168.162.133",
+        "SSH": true
+      }
+    }
+  },
+  "49:95:DB:00": {
+    "Name": "AP70",
+    "Protocolos": [
+      "RIP",
+      "LLDP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          21,
+          80,
+          161
+        ],
+        "Policies": [
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.12.164",
+        "SSH": false
+      }
+    }
+  },
+  "BF:81:08:B6": {
+    "Name": "R71",
+    "Protocolos": [
+      "RIP",
+      "BGP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          161,
+          21
+        ],
+        "Policies": [
+          "Allow_HTTP"
+        ],
+        "ET": false,
+        "IP": "192.168.162.48",
+        "SSH": true
+      }
+    }
+  },
+  "20:EA:12:96": {
+    "Name": "SW72",
+    "Protocolos": [
+      "RIP",
+      "OSPF"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          23,
+          161,
+          53
+        ],
+        "Policies": [
+          "Allow_all",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.92.222",
+        "SSH": true
+      }
+    }
+  },
+  "A9:8B:3F:BC": {
+    "Name": "RT73",
+    "Protocolos": [
+      "ISIS",
+      "HSRP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          53,
+          21,
+          161
+        ],
+        "Policies": [
+          "Always_Online",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.111.156",
+        "SSH": true
+      }
+    }
+  },
+  "96:A4:34:28": {
+    "Name": "FW74",
+    "Protocolos": [
+      "VRRP",
+      "CDP",
+      "ISIS",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          53,
+          22
+        ],
+        "Policies": [
+          "Strict_FW",
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.164.252",
+        "SSH": true
+      }
+    }
+  },
+  "26:CF:BA:51": {
+    "Name": "R75",
+    "Protocolos": [
+      "LLDP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          8080
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.155.41",
+        "SSH": false
+      }
+    }
+  },
+  "BD:BE:E3:27": {
+    "Name": "AP76",
+    "Protocolos": [
+      "SNMP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          587,
+          8080,
+          80
+        ],
+        "Policies": [
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.133.101",
+        "SSH": true
+      }
+    }
+  },
+  "86:85:E4:6D": {
+    "Name": "AP77",
+    "Protocolos": [
+      "ISIS",
+      "RIP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          443,
+          53
+        ],
+        "Policies": [
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.182.18",
+        "SSH": false
+      }
+    }
+  },
+  "99:50:59:B9": {
+    "Name": "AP78",
+    "Protocolos": [
+      "BGP",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          22,
+          21
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Rate_Limit"
+        ],
+        "ET": true,
+        "IP": "192.168.157.228",
+        "SSH": true
+      }
+    }
+  },
+  "21:9E:CB:F5": {
+    "Name": "AP79",
+    "Protocolos": [
+      "HSRP",
+      "LLDP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          80,
+          53,
+          3389
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Rate_Limit"
+        ],
+        "ET": true,
+        "IP": "192.168.197.249",
+        "SSH": true
+      }
+    }
+  },
+  "DD:1C:3F:4E": {
+    "Name": "FW80",
+    "Protocolos": [
+      "STP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          587,
+          80,
+          8443
+        ],
+        "Policies": [
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.33.162",
+        "SSH": false
+      },
+      "VLAN20": {
+        "Puertos": [
+          161,
+          80,
+          8443
+        ],
+        "Policies": [
+          "Strict_FW"
+        ],
+        "ET": true,
+        "IP": "192.168.44.170",
+        "SSH": false
+      }
+    }
+  },
+  "15:0E:29:17": {
+    "Name": "AP81",
+    "Protocolos": [
+      "CDP",
+      "RIP",
+      "HSRP"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          161,
+          587,
+          3389
+        ],
+        "Policies": [
+          "Log_Traffic",
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.117.20",
+        "SSH": true
+      },
+      "VLAN30": {
+        "Puertos": [
+          53
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Strict_FW"
+        ],
+        "ET": true,
+        "IP": "192.168.88.157",
+        "SSH": true
+      }
+    }
+  },
+  "A0:A3:B0:CC": {
+    "Name": "SW82",
+    "Protocolos": [
+      "SNMP",
+      "CDP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          80,
+          587
+        ],
+        "Policies": [
+          "Log_Traffic",
+          "Deny_Inbound"
+        ],
+        "ET": true,
+        "IP": "192.168.13.76",
+        "SSH": false
+      }
+    }
+  },
+  "D6:7F:51:A7": {
+    "Name": "AP83",
+    "Protocolos": [
+      "LACP",
+      "RIP",
+      "STP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          53,
+          22
+        ],
+        "Policies": [
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.248.63",
+        "SSH": true
+      },
+      "VLAN30": {
+        "Puertos": [
+          21,
+          22,
+          3389
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.138.4",
+        "SSH": true
+      }
+    }
+  },
+  "DC:44:87:BB": {
+    "Name": "RT84",
+    "Protocolos": [
+      "OSPF",
+      "HSRP",
+      "CDP"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          587,
+          80,
+          23
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "QoS_High"
+        ],
+        "ET": true,
+        "IP": "192.168.33.251",
+        "SSH": true
+      },
+      "VLAN20": {
+        "Puertos": [
+          21,
+          8443
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.129.12",
+        "SSH": true
+      }
+    }
+  },
+  "13:46:AA:F2": {
+    "Name": "AP85",
+    "Protocolos": [
+      "STP",
+      "LLDP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          21,
+          443,
+          23
+        ],
+        "Policies": [
+          "Strict_FW",
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.182.146",
+        "SSH": false
+      }
+    }
+  },
+  "F3:08:BC:A9": {
+    "Name": "R86",
+    "Protocolos": [
+      "LLDP",
+      "VRRP",
+      "OSPF"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          3389,
+          8443,
+          8080
+        ],
+        "Policies": [
+          "Strict_FW"
+        ],
+        "ET": false,
+        "IP": "192.168.44.136",
+        "SSH": false
+      },
+      "VLAN20": {
+        "Puertos": [
+          8443
+        ],
+        "Policies": [
+          "Allow_all"
+        ],
+        "ET": true,
+        "IP": "192.168.49.6",
+        "SSH": false
+      }
+    }
+  },
+  "A0:D6:4D:D3": {
+    "Name": "SW87",
+    "Protocolos": [
+      "SNMP",
+      "LLDP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN1": {
+        "Puertos": [
+          161
+        ],
+        "Policies": [
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.170.124",
+        "SSH": false
+      },
+      "VLAN100": {
+        "Puertos": [
+          443,
+          53
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "Isolate_VLAN"
+        ],
+        "ET": false,
+        "IP": "192.168.157.125",
+        "SSH": true
+      }
+    }
+  },
+  "7E:8E:98:73": {
+    "Name": "FW88",
+    "Protocolos": [
+      "RIP",
+      "ISIS",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          587,
+          8443,
+          80
+        ],
+        "Policies": [
+          "DMZ_Restrict",
+          "Isolate_VLAN"
+        ],
+        "ET": true,
+        "IP": "192.168.75.12",
+        "SSH": false
+      }
+    }
+  },
+  "28:B1:E2:83": {
+    "Name": "RT89",
+    "Protocolos": [
+      "RIP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          80
+        ],
+        "Policies": [
+          "Log_Traffic"
+        ],
+        "ET": true,
+        "IP": "192.168.172.233",
+        "SSH": true
+      }
+    }
+  },
+  "77:1A:33:D3": {
+    "Name": "FW90",
+    "Protocolos": [
+      "ISIS",
+      "BGP",
+      "STP",
+      "OSPF"
+    ],
+    "VLANs": {
+      "VLAN20": {
+        "Puertos": [
+          53,
+          8443,
+          8080
+        ],
+        "Policies": [
+          "Isolate_VLAN",
+          "QoS_High"
+        ],
+        "ET": true,
+        "IP": "192.168.233.198",
+        "SSH": true
+      },
+      "VLAN30": {
+        "Puertos": [
+          3389,
+          8080,
+          161
+        ],
+        "Policies": [
+          "Deny_Inbound"
+        ],
+        "ET": false,
+        "IP": "192.168.226.216",
+        "SSH": true
+      }
+    }
+  },
+  "12:CB:FD:5F": {
+    "Name": "FW91",
+    "Protocolos": [
+      "OSPF",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          53,
+          161
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.70.51",
+        "SSH": true
+      },
+      "VLAN20": {
+        "Puertos": [
+          443,
+          53
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Allow_all"
+        ],
+        "ET": false,
+        "IP": "192.168.203.77",
+        "SSH": true
+      }
+    }
+  },
+  "59:CF:DA:A7": {
+    "Name": "R92",
+    "Protocolos": [
+      "CDP",
+      "BGP",
+      "STP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          8080,
+          22
+        ],
+        "Policies": [
+          "DMZ_Restrict",
+          "Log_Traffic"
+        ],
+        "ET": false,
+        "IP": "192.168.193.70",
+        "SSH": false
+      }
+    }
+  },
+  "9A:05:85:B8": {
+    "Name": "SW93",
+    "Protocolos": [
+      "CDP",
+      "BGP"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          23
+        ],
+        "Policies": [
+          "Always_Online",
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.158.58",
+        "SSH": true
+      }
+    }
+  },
+  "44:F4:4E:E8": {
+    "Name": "AP94",
+    "Protocolos": [
+      "HSRP",
+      "SNMP",
+      "ISIS"
+    ],
+    "VLANs": {
+      "VLAN30": {
+        "Puertos": [
+          8443
+        ],
+        "Policies": [
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.136.182",
+        "SSH": false
+      },
+      "VLAN200": {
+        "Puertos": [
+          3389
+        ],
+        "Policies": [
+          "Allow_all"
+        ],
+        "ET": true,
+        "IP": "192.168.147.139",
+        "SSH": true
+      }
+    }
+  },
+  "54:A7:E2:3B": {
+    "Name": "SW95",
+    "Protocolos": [
+      "LLDP",
+      "ISIS",
+      "BGP",
+      "CDP"
+    ],
+    "VLANs": {
+      "VLAN500": {
+        "Puertos": [
+          161
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "Allow_all"
+        ],
+        "ET": false,
+        "IP": "192.168.173.208",
+        "SSH": false
+      }
+    }
+  },
+  "0B:CA:82:01": {
+    "Name": "SW96",
+    "Protocolos": [
+      "BGP",
+      "OSPF",
+      "HSRP",
+      "LACP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          80
+        ],
+        "Policies": [
+          "Allow_all",
+          "QoS_High"
+        ],
+        "ET": false,
+        "IP": "192.168.47.198",
+        "SSH": true
+      },
+      "VLAN50": {
+        "Puertos": [
+          8443,
+          23,
+          21
+        ],
+        "Policies": [
+          "Allow_HTTP",
+          "DMZ_Restrict"
+        ],
+        "ET": false,
+        "IP": "192.168.21.176",
+        "SSH": true
+      }
+    }
+  },
+  "B2:3C:5B:C9": {
+    "Name": "AP97",
+    "Protocolos": [
+      "RIP",
+      "OSPF"
+    ],
+    "VLANs": {
+      "VLAN50": {
+        "Puertos": [
+          8443,
+          161
+        ],
+        "Policies": [
+          "Rate_Limit",
+          "DMZ_Restrict"
+        ],
+        "ET": true,
+        "IP": "192.168.64.119",
+        "SSH": false
+      }
+    }
+  },
+  "4F:8D:60:39": {
+    "Name": "R98",
+    "Protocolos": [
+      "HSRP",
+      "LLDP",
+      "OSPF",
+      "RIP"
+    ],
+    "VLANs": {
+      "VLAN10": {
+        "Puertos": [
+          3389
+        ],
+        "Policies": [
+          "Allow_HTTP"
+        ],
+        "ET": true,
+        "IP": "192.168.63.191",
+        "SSH": true
+      }
+    }
+  },
+  "CD:E0:77:6F": {
+    "Name": "R99",
+    "Protocolos": [
+      "SNMP",
+      "VRRP"
+    ],
+    "VLANs": {
+      "VLAN100": {
+        "Puertos": [
+          3389,
+          21,
+          8080
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Rate_Limit"
+        ],
+        "ET": true,
+        "IP": "192.168.106.78",
+        "SSH": false
+      }
+    }
+  },
+  "1F:59:DA:FD": {
+    "Name": "R100",
+    "Protocolos": [
+      "CDP",
+      "HSRP",
+      "SNMP"
+    ],
+    "VLANs": {
+      "VLAN200": {
+        "Puertos": [
+          443,
+          587
+        ],
+        "Policies": [
+          "Deny_Inbound",
+          "Rate_Limit"
+        ],
+        "ET": false,
+        "IP": "192.168.62.219",
+        "SSH": true
+      }
+    }
+  }
+}
