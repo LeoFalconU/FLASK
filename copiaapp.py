@@ -8,7 +8,17 @@ app = Flask(__name__)
 # Endpoint HTML
 @app.route('/')
 def inicio():
-    return datos_json
+    print("Cambio")
+    print("Hola")
+    return datos_json["3D:RF:09:7F"]
+
+@app.route('/json/<mac>')
+def json_data(mac):
+    print(mac)
+    print(datos_json[mac]["Protocolos"])
+    print(datos_json[mac]["VLANs"])
+    print(datos_json[mac]["Status"])
+    return datos_json[mac]["Name"]
 
 # Endpoint JSON
 @app.route('/api/saludo')
@@ -69,5 +79,36 @@ def funcion1():
     autor
     fecha de modificacion
     """
-
 #pasar parametros a traves de la url (postman) o en body , para editar la api en tiempo real
+
+
+
+@app.route('/')
+def inicio():
+    print("Cambio")
+    print("Hola")
+    return datos_json["3D:RF:09:7F"]
+
+@app.route('/')
+def inicio():
+    print("Cambio")
+    print("Hola")
+    return datos_json["3D:RF:09:7F"]
+
+@app.route('/')
+def inicio():
+    print("Cambio")
+    print("Hola")
+    return datos_json["3D:RF:09:7F"]
+
+@app.route('/')
+def inicio():
+    print("Cambio")
+    print("Hola")
+    return datos_json["3D:RF:09:7F"]
+
+@app.route('/')
+def inicio():
+    print("Cambio")
+    print("Hola")
+    return datos_json["3D:RF:09:7F"]
